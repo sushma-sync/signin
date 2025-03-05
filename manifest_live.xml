@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0" xmlns:mailappor="http://schemas.microsoft.com/office/mailappversionoverrides/1.0" xsi:type="MailApp">
   <Id>16c028c6-f97d-4b09-96eb-3821219e0a47</Id>
-  <Version>1.0.0.0</Version>
-  <ProviderName>Contoso</ProviderName>
+  <Version>1.0.0.1</Version>
+  <ProviderName>Signin</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
-  <DisplayName DefaultValue="test-event-naa"/>
+  <DisplayName DefaultValue="Signin-Token"/>
   <Description DefaultValue="A template to get started."/>
-  <IconUrl DefaultValue="https://localhost:3000/assets/icon-64.png"/>
-  <HighResolutionIconUrl DefaultValue="https://localhost:3000/assets/icon-128.png"/>
+  <IconUrl DefaultValue="https://sushma-sync.github.io/signin/assets/icon-64.png"/>
+  <HighResolutionIconUrl DefaultValue="https://sushma-sync.github.io/signin/assets/icon-128.png"/>
   <SupportUrl DefaultValue="https://www.contoso.com/help"/>
   <AppDomains>
     <AppDomain>https://www.contoso.com</AppDomain>
@@ -23,7 +23,7 @@
   <FormSettings>
     <Form xsi:type="ItemRead">
       <DesktopSettings>
-        <SourceLocation DefaultValue="https://localhost:3000/taskpane.html"/>
+        <SourceLocation DefaultValue="https:///signin/src/taskpane/taskpane.html"/>
         <RequestedHeight>250</RequestedHeight>
       </DesktopSettings>
     </Form>
@@ -117,15 +117,15 @@
     </Hosts>
     <Resources>
       <bt:Images>
-        <bt:Image id="Icon.16x16" DefaultValue="https://localhost:3000/assets/icon-16.png"/>
-        <bt:Image id="Icon.32x32" DefaultValue="https://localhost:3000/assets/icon-32.png"/>
-        <bt:Image id="Icon.80x80" DefaultValue="https://localhost:3000/assets/icon-80.png"/>
+        <bt:Image id="Icon.16x16" DefaultValue="https://sushma-sync.github.io/signin/assets/icon-16.png"/>
+        <bt:Image id="Icon.32x32" DefaultValue="https://sushma-sync.github.io/signin/assets/icon-32.png"/>
+        <bt:Image id="Icon.80x80" DefaultValue="https://sushma-sync.github.io/signin/assets/icon-80.png"/>
       </bt:Images>
       <bt:Urls>
-        <bt:Url id="Taskpane.Url" DefaultValue="https://localhost:3000/taskpane.html" />
-        <bt:Url id="WebViewRuntime.Url" DefaultValue="https://localhost:3000/commands.html" />
+        <bt:Url id="Taskpane.Url" DefaultValue="https://sushma-sync.github.io/signin/src/taskpane/taskpane.html" />
+        <bt:Url id="WebViewRuntime.Url" DefaultValue="https://sushma-sync.github.io/signin/src/launchevent/commands.html" />
         <!-- Entry needed for classic Outlook on Windows. -->
-        <bt:Url id="JSRuntime.Url" DefaultValue="https://localhost:3000/launchevent.js" />
+        <bt:Url id="JSRuntime.Url" DefaultValue="https://sushma-sync.github.io/signin/src/launchevent/launchevent.js" />
       </bt:Urls>
       <bt:ShortStrings>
         <bt:String id="GroupLabel" DefaultValue="Contoso Add-in"/>
